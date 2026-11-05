@@ -1,0 +1,24 @@
+# DeepLogic AI — Supplier Invoice Fingerprint
+# Install into a virtual environment:
+#   python3 -m venv .venv
+#   source .venv/bin/activate        # macOS / Linux
+#   .venv\Scripts\activate           # Windows
+#   pip install -r requirements.txt
+
+# PDF text extraction — replaces pdfminer/PyPDF2 for structured layout access
+PyMuPDF==2.1
+
+# JSON Schema validation — validates extractor output against output_schema.json
+jsonschema==4.26.0
+
+# Automated testing framework — pytest 9.2.0 has official Python 3.14 support
+pytest==9.2.0
+
+# Standard-library modules used by the project (NOT listed here because they
+# come with Python and do not need pip installation):
+#   decimal   — financial arithmetic with exact decimal representation
+#   json      — reading/writing JSON files
+#   re        — regular expressions for label matching
+#   datetime  — date parsing and arithmetic
+#   pathlib   — file path handling
+#   typing    — type hints

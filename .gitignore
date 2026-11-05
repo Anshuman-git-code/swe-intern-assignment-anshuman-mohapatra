@@ -1,0 +1,38 @@
+# Virtual environment — never commit; recreate with: pip install -r requirements.txt
+.venv/
+
+# Python bytecode — generated automatically, not needed in the repository
+__pycache__/
+*.py[cod]
+
+# macOS filesystem metadata
+.DS_Store
+
+# Pytest cache — regenerated on each test run
+.pytest_cache/
+
+# IDE configuration — personal settings
+.idea/
+.vscode/
+
+# Compiled C extensions (can appear if any dependency is built from source)
+*.so
+
+# Egg / distribution build artefacts
+*.egg-info/
+dist/
+build/
+
+/docs
+
+# Environment variable files — never commit secrets
+.env
+.env.*
+
+# Internal development materials — local only, not part of the submission
+.kiro/
+reports/
+
+# NOTE: input/*.pdf, input/output_schema.json, and reference/ are committed
+# because they are required to reproduce the project.
+# outputs/*.json and outputs/validation_report.md ARE committed as deliverables.
